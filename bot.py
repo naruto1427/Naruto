@@ -9,9 +9,9 @@ from telethon import TelegramClient, events
 
 logging.basicConfig(level=logging.INFO)
 
-api_id = int(os.getenv("API_ID"))
-api_hash = os.getenv("API_HASH")
-session_name = os.getenv("SESSION_NAME", "poke_session")
+api_id = int(os.getenv("api_id"))
+api_hash = os.getenv("api_hash")
+session_name = os.getenv("session", "poke_session")
 
 client = TelegramClient(f"{session_name}.session", api_id, api_hash)
 
